@@ -4,7 +4,8 @@ import { createBrowserRouter, Outlet, RouterProvider } from 'react-router-dom';
 import About from './components/About';
 import Home from './components/Home';
 import Header from './components/Header';
-
+import ClassBasedCount from './components/ClassBasedCount';
+import ClassLifeCycle from './components/ClassLifeCycle';
 const MyContainer = () => {
     return (
         <main>
@@ -24,6 +25,14 @@ const routingConfiguration = createBrowserRouter([
             {
                 path:'/about',
                 element: <About/>
+            },
+            {
+                path:'/classbasedcount',
+                element: <ClassBasedCount />
+            },
+            {
+                path:'/classlifecycle',
+                element: <ClassLifeCycle />
             }
         ],
         element:<MyContainer />
